@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "olakai-consulting/write-with-me",
+	"version": "0.1.0",
+	"title": "Write With Me AI by Olakai Consulting",
+	"category": "widgets",
+	"icon": "edit",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"inputValue": {
+			"type": "string",
+			"default": ""
+		},
+		"uniqueKey": {
+			"type": "string",
+			"default": ""
+		},
+		"response": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"textdomain": "plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
