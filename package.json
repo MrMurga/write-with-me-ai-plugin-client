@@ -1,0 +1,35 @@
+{
+	"name": "write-with-me-ai-plugin-client",
+	"version": "0.1.0",
+	"description": "Write With ME AI Client Plugin. WriteWithMe AI is the perfect plugin for busy content creators who want to get ahead of the curve. Our plugin uses natural language processing to generate variations and summaries of any content in just seconds.",
+	"author": "Olakai Consulting LLC",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"dev": "wp-env start",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"test": "phpunit tests --color",
+		"test:watch": "watch \"clear && printf '\\e[3J'; npm run --silent test\" . --interval=1 --ignoreDotFiles"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^9.36.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"@wordpress/env": "^8.11.0",
+		"@wordpress/scripts": "^26.13.0",
+		"postcss-preset-mantine": "1.9.0"
+	},
+	"resolutions": {
+		"react": "^18.2.0"
+	}
+}
